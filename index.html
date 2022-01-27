@@ -102,10 +102,10 @@
             var row = rowend / inrrow;
             var col = colend / inrcol;
 
-            for (var r = rowstart; r < row; r++) {
+            for (var r = 0; r < row; r++) {
                 var x = document.getElementById('myTable').insertRow(r);
                 if (r == 0) {
-                    for (var c = colstart; c < col; c++) {
+                    for (var c = 0; c < col; c++) {
                         var y = x.insertCell(c);
                         y.innerHTML = c * inrrow;
                     }
